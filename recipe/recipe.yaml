@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.3"
+  version: "0.0.4"
   python_check_max: "3.14"
   cov_fail_under: "100"
 
@@ -12,10 +12,10 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/a/annotated-doc/annotated_doc-${{ version }}.tar.gz
-    sha256: e18370014c70187422c33e945053ff4c286f453a984eba84d0dbfa0c935adeda
+    sha256: fbcda96e87e9c92ad167c2e53839e57503ecfda18804ea28102353485033faa4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
@@ -24,7 +24,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - uv-build >=0.9.1,<0.10.0
+    - pdm-backend
   run:
     - python >=${{ python_min }}
 
