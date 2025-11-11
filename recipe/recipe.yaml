@@ -24,7 +24,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - uv-build >=0.9.1,<0.10.0
+    - pdm-backend
   run:
     - python >=${{ python_min }}
 
