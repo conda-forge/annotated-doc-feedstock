@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.4"
+  version: "0.0.5"
   python_check_max: "3.14"
   cov_fail_under: "100"
 
@@ -12,7 +12,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/a/annotated-doc/annotated_doc-${{ version }}.tar.gz
-    sha256: fbcda96e87e9c92ad167c2e53839e57503ecfda18804ea28102353485033faa4
+    sha256: c7e58ce09192557605d8bbd92836d7e1d520ac9580096042c0bfd197efacf1bb
 
 build:
   number: 0
