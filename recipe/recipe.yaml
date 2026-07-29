@@ -37,11 +37,14 @@ tests:
         - ${{ python_check_max }}.*
   - files:
       source:
+        - scripts/__init__.py
+        - scripts/prepare_release.py
         - tests/
     requirements:
       run:
         - pytest-cov
         - python ${{ python_min }}.*
+        - typer >=0.16.1
     script:
       - coverage run --source=annotated_doc --branch -m pytest -vv --tb=long --color=yes
       - coverage report --show-missing --skip-covered --fail-under=${{ cov_fail_under }}
