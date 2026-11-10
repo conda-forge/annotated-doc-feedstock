@@ -3,11 +3,13 @@ About annotated-doc-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/annotated-doc-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/fastapi/annotated-doc
+Home: https://pypi.org/project/annotated-doc
 
 Package license: MIT
 
 Summary: Document parameters, class attributes, return types, and variables inline, with Annotated.
+
+Development: https://github.com/fastapi/annotated-doc
 
 Current build status
 ====================
